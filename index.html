@@ -13,9 +13,14 @@
   stroke-linecap: round;
 }
 
-.districts .active {
+.aye {
+  fill: green;
+}
+
+.nay {
   fill: orange;
 }
+
 
 
 </style>
@@ -69,30 +74,67 @@ var svgl = d3.select("#sldl-map").append("svg")
     .attr("width", width)
     .attr("height", height);
 
+    /*
+
 var svgu = d3.select("#sldu-map").append("svg")
     .attr("width", width)
     .attr("height", height);
 
+    */
+
 
 d3.json("/data/topo.json", function(error, ca) {
   if (error) throw error;
+
+  var districts = topojson.feature(ca, ca.objects.sldl).features;
+
+  //join in static district data + vote
+  d3.csv("/data/votes_climate.csv", function(error, votes) {
+        votes.forEach(function(d, i) {
+          districts.forEach(function(e, j) {
+                if ( e.properties.NAME === d.District) {
+                    e.properties.VOTE = d.Vote;
+
+                }
+            })
+    })
+
+
 
   svgl.append("g")
       .attr("id", "sldl")
       .attr("class", "districts")
       .attr("transform", "translate(" + translate + ")scale(" + scale + ")")
     .selectAll("path")
-      .data(topojson.feature(ca, ca.objects.sldl).features)
+      .data(districts)
       .attr("stroke", "red")
       .attr("stroke-width", 1.0)
     .enter().append("path")
       .attr("d", path)
+      .attr("class", function(d){ 
+        console.log(d.properties);
+        if( d.properties.VOTE == "AYE") {
+          return "aye";
+        } else if (d.properties.VOTE == "NAY") {
+          return 'nay';
+        } else return '';
+      }
+      )
       .on('mouseover',function(d,i){
+        d3.select(this)
+          .style('z-index', 10)
+          .style('stroke', 'black')
+          .style('stroke-width', 3);
+
         d3.select("#infor-sldl")
               .style("visibility", "visible")
               .text('Assembly District ' + d.properties.NAME);
             })
       .on('mouseout',function(){
+         d3.select(this)
+          .style('z-index', 1)
+          .style('stroke', 'white')
+          .style('stroke-width', 1);
          d3.select("#infor-sldl").style("visibility", "hidden");
       }); 
 
@@ -115,6 +157,7 @@ d3.json("/data/topo.json", function(error, ca) {
       }); 
 
 */
+  });
 
 });
 
