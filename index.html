@@ -59,8 +59,9 @@ var width = 300,
     active = d3.select(null),
     centered;
 
-var bill_name = 'AB-378';  //temp hardcode, for single bill testing
-var bill_info = 'Greenhouse gases, criteria air pollutants, and toxic air contaminants';
+var bill_name = 'AB-42';  //temp hardcode, for single bill testing
+var bill_info = 'AB-42 Bail: pretrial release.';
+var bill_file = 'votes_AB42.csv'
 
 d3.select('#billName').text(bill_name);
 d3.select('#billInfo').text(bill_info);
@@ -89,7 +90,7 @@ d3.json("/data/topo.json", function(error, ca) {
   var districts = topojson.feature(ca, ca.objects.sldl).features;
 
   //join in static district data + vote
-  d3.csv("/data/votes_climate.csv", function(error, votes) {
+  d3.csv("/data/" + bill_file, function(error, votes) {
         votes.forEach(function(d, i) {
           districts.forEach(function(e, j) {
                 if ( e.properties.NAME === d.District) {
