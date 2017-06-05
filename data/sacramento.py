@@ -12,6 +12,14 @@ sldl = pd.read_excel('State Legislature Members.xlsx', 'Assemblymembers', index_
 
 #TODO hook up scraper
 
+  import html5lib
+bill_url = 'http://leginfo.legislature.ca.gov/faces/billVotesClient.xhtml?bill_id=201720180AB378'
+
+tables = pd.read_html(bill_url)
+
+print(tables[0])
+
+
 #for now
 motion = 'AB 378 GARCIA, C. Assembly Third Reading'
 vote_date = "06/01/17"
