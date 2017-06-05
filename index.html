@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<style>
+
+.map {
+  display: inline-block;
+}
+
+.districts {
+  fill: #aaa;
+  stroke: white;
+  stroke-width: 1.0px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.districts .active {
+  fill: orange;
+}
+
+
+</style>
+<body>
+
+ <h2>AB-378</h2>
+ <h4>Greenhouse gases, criteria air pollutants, and toxic air contaminants</h4>  
+
+ <div class="map" id="sldl-map">
+
+ <label> Assembly(lower house)</label>
+  <div class="infor" id="infor-sldl"></div>
+
+ </div>
+
+ <div class="map" id="sldu-map">
+   <label>State Senate (upper house)</label>
+   <div class="infor" id="infor-sldu"></div>
+
+
+ </div>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/topojson.v2.min.js"></script>
+<script>
+
+
+//TODO scale  CA map
+var width = 300,
+    height = 600,
+    scale = 0.5,
+    translate = [ 0 , -40],
+    active = d3.select(null),
+    centered;
+
+
+//todo remove albers, adjust scaling
+var path = d3.geoPath()  //modified v4
+    .projection(null);
+
+
+var svgl = d3.select("#sldl-map").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+var svgu = d3.select("#sldu-map").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+
+d3.json("/data/topo.json", function(error, ca) {
+  if (error) throw error;
+
+  svgl.append("g")
+      .attr("id", "sldl")
+      .attr("class", "districts")
+      .attr("transform", "translate(" + translate + ")scale(" + scale + ")")
+    .selectAll("path")
+      .data(topojson.feature(ca, ca.objects.sldl).features)
+      .attr("stroke", "red")
+      .attr("stroke-width", 1.0)
+    .enter().append("path")
+      .attr("d", path)
+      .on('mouseover',function(d,i){
+        d3.select("#infor-sldl")
+              .style("visibility", "visible")
+              .text('Assembly District ' + d.properties.NAME);
+            })
+      .on('mouseout',function(){
+         d3.select("#infor-sldl").style("visibility", "hidden");
+      }); 
+
+
+  svgu.append("g")
+      .attr("id", "sldu")
+      .attr("class", "districts")
+      .attr("transform", "translate(" + translate + ")scale(" + scale + ")")
+    .selectAll("path")
+      .data(topojson.feature(ca, ca.objects.sldu).features)
+    .enter().append("path")
+      .attr("d", path)
+      .on('mouseover',function(d,i){
+          d3.select("#infor-sldu")
+            .style("visibility", "visible")
+            .text('State Senate District ' + d.properties.NAME);
+        })
+      .on('mouseout',function(){
+         d3.select("#infor-sldu").style("visibility", "hidden");
+      }); 
+
+});
+
+   
+
+
+
+</script>
