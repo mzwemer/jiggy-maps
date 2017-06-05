@@ -1,0 +1,81 @@
+District,Name,Party,Location,Incumbent?,Unopposed?,Predecessor,Date last elected,Term ends,Turnout (last election),% of vote won,2016 Presidential turnout,% for Clinton (2016),% for Brown (2014),% for Obama (2012),Eligible for reelection? ,Voting age citizens (2015),Registered voters (2/10/2017 report),Democrat,Republican,No party preference/other,Gen Election Opponent's Party,Courage Campain score,Vote
+1,Brian Dahle (I),R,Bieber,x,,N/A (redistricted),2016,2018,201528,0.738,,0.361,,,,,275604,80620,117007,77977.0,D,3,NAY
+2,Jim Wood (I),D,Healdsburg,x,,D,2016,2018,189265,0.729,,0.622,,,,,270256,129500,62242,78514.0,R,91,AYE
+3,James Gallagher (I),R,Nicolaus,x,,R,2016,2018,172777,0.63,,0.395,,,,,244621,78589,93958,72074.0,D,0,NAY
+4,Cecilia Aguiar-Curry,D,Winters,,,D,2016,2018,186942,0.635,,0.628,,,,,255436,119054,60953,75429.0,R,n/a,ABSTAIN
+5,Frank Bigelow (I),R,O'Neals,x,,N/A (redistricted),2016,2018,188593,0.645,,0.385,,,,,248419,77086,102960,68373.0,D,0,NAY
+6,Kevin Kiley,R,Rocklin,,,R,2016,2018,231334,0.646,,0.412,,,,,301442,85890,134194,81358.0,D,n/a,NAY
+7,Kevin McCarty (I),D,Sacramento,x,,D,2016,2018,159209,0.698,,0.675,,,,,242595,117714,50443,74438.0,R,100,AYE
+8,Ken Cooley (I),D,Rancho Cordova,x,,N/A (redistricted),2016,2018,183400,0.57,,0.518,,,,,263704,104854,85817,73033.0,R,60,AYE
+9,Jim Cooper (I),D,Elk Grove,x,,D,2016,2018,164708,0.668,,0.615,,,,,245221,113247,65478,66496.0,R,24,NAY
+10,Marc Levine (I),D,Greenbrae,x,,D,2016,2018,205562,0.682,,0.757,,,,,278002,153808,47686,76508.0,D,72,AYE
+11,Jim Frazier (I),D,Oakley,x,,N/A (redistricted),2016,2018,173819,0.642,,0.589,,,,,252870,117718,63221,71931.0,R,21,NAY
+12,Heath Flora,R,Ripon,,,R,2016,2018,156113,0.523,,0.431,,,,,234148,81887,94047,58214.0,R,n/a,NAY
+13,Susan Eggman (I),D,Stockton,x,,N/A (redistricted),2016,2018,133198,0.648,,0.63,,,,,212783,104936,54779,53068.0,R,71,AYE
+14,Tim Grayson,D,Concord,,,D,2016,2018,174953,0.615,,0.696,,,,,266826,138139,52055,76632.0,R,n/a,NAY
+15,Tony Thurmond (I),D,Richmond,x,,D,2016,2018,212058,0.894,,0.874,,,,,298488,198171,18948,81369.0,R,100,AYE
+16,Catharine Baker (I),R,Dublin,x,,D,2016,2018,231875,0.559,,0.645,,,,,305117,125349,88763,91005.0,D,10,NAY
+17,David Chiu (I),D,San Francisco,x,,D,2016,2018,199570,0.863,,0.881,,,,,298276,179854,17057,101365.0,R,90,AYE
+18,Rob Bonta (I),D,Alameda,x,,D,2016,2018,179436,0.87,,0.859,,,,,270094,172994,18433,78667.0,R,97,AYE
+19,Phil Ting (I),D,San Francisco,x,,D,2016,2018,187232,0.801,,0.816,,,,,274281,149095,27500,97686.0,R,100,AYE
+20,Bill Quirk (I),D,Hayward,x,,D,2016,2018,153508,0.743,,0.755,,,,,233345,127645,32499,73201.0,R,89,AYE
+21,Adam Gray (I),D,Merced,x,,N/A (redistricted),2016,2018,123220,0.698,,0.546,,,,,178372,80815,55364,42193.0,R,33,NAY
+22,Kevin Mullin (I),D,South San Francisco,x,,D,2016,2018,199335,0.744,,0.752,,,,,265076,135278,46891,82907.0,R,100,AYE
+23,Jim Patterson (I),R,Fresno,x,,R,2016,2018,164809,0.759,,0.44,,,,,266734,90642,110362,65730.0,R,0,NAY
+24,Marc Berman,D,Palo Alto,,,D,2016,2018,169781,0.544,,0.782,,,,,239961,118368,41567,80026.0,D,n/a,AYE
+25,Kansen Chu (I),D,San Jose,x,,D,2016,2018,148101,0.728,,0.736,,,,,210744,98394,34464,77886.0,R,91,ABSTAIN
+26,Devon Mathis (I),R,Visalia,x,,R,2016,2018,120494,0.633,,0.415,,,,,172092,55703,72307,44082.0,D,0,NAY
+27,Ash Kalra,D,San Jose,,,D,2016,2018,134744,0.532,,0.778,,,,,195886,98566,31512,65808.0,D,n/a,AYE
+28,Evan Low (I),D,Campbell,x,,D,2016,2018,195188,0.7,,0.706,,,,,254471,113884,56316,84271.0,R,90,AYE
+29,Mark Stone (I),D,Scotts Valley,x,,D,2016,2018,216948,0.722,,0.7,,,,,283828,143824,58060,81944.0,R,100,AYE
+30,Anna Caballero,D,Salinas,,,D,2016,2018,127883,0.625,,0.667,,,,,196637,100563,43518,52556.0,D,n/a,NAY
+31,Joaquin Arambula (I),D,Kingsburg,x,,D,2016,2018,97858,0.638,,0.621,,,,,174654,82947,46665,45042.0,R,58,NAY
+32,Rudy Salas (I),D,Bakersfield,x,,R,2016,2018,81558,0.651,,0.565,,,,,146980,71855,38697,36428.0,R,45,NAY
+33,Jay Obernolte (I),R,Big Bear Lake,x,,R,2016,2018,140086,0.6,,0.4,,,,,206392,70325,76298,59769.0,D,0,NAY
+34,Vince Fong,R,Bakersfield,,,R,2016,2018,169264,0.732,,0.341,,,,,247249,68492,110013,68744.0,D,n/a,NAY
+35,Jordan Cunningham,R,Templeton,,,R,2016,2018,192415,0.547,,0.496,,,,,245216,87499,90834,66883.0,D,n/a,NAY
+36,Tom Lackey (I),R,Palmdale,x,,D,2016,2018,146556,0.531,,0.499,,,,,234801,94712,77502,62587.0,D,3,NAY
+37,Monique Limón,D,Santa Barbara,,,D,2016,2018,200288,0.641,,0.643,,,,,270523,123877,68554,78092.0,R,n/a,AYE
+38,Dante Acosta,R,Santa Clarita,,,R,2016,2018,194778,0.529,,0.496,,,,,283207,99098,103509,80600.0,D,n/a,NAY
+39,Raul Bocanegra,D,Pacoima,,,D,2016,2018,124483,0.601,,0.746,,,,,227835,120614,34471,75750.0,D,n/a,NAY
+40,Marc Steinorth (I),R,Rancho Cucamonga,x,,R,2016,2018,151126,0.506,,0.541,,,,,229591,92559,77491,59541.0,D,0,NAY
+41,Chris Holden (I),D,Pasadena,x,,D,2016,2018,199450,0.605,,0.628,,,,,290052,128861,82661,78530.0,R,88,AYE
+42,Chad Mayes (I),R,Yucca Valley,x,,R,2016,2018,170445,0.574,,0.456,,,,,230889,80426,89635,60828.0,D,0,NAY
+43,Laura Friedman,D,Glendale,,,D,2016,2018,164747,0.645,,0.689,,,,,281486,131926,58209,,D,n/a,AYE
+44,Jacqui Irwin (I),D,Thousand Oaks,x,,R,2016,2018,181501,0.59,,0.571,,,,,241389,101022,76430,,R,48,AYE
+45,Matt Dababneh (I),D,Encino,x,,D,2016,2018,167405,0.664,,0.674,,,,,272717,133092,61494,,R,79,ABSTAIN
+46,Adrin Nazarian (I),D,Sherman Oaks,x,,N/A (redistricted),2016,2018,138245,0.561,,0.762,,,,,246235,131333,36583,,D,79,AYE
+47,Eloise Reyes,D,Grand Terrace,,,D,2016,2018,114426,0.546,,0.701,,,,,187280,94076,37898,,D,n/a,AYE
+48,Blanca Rubio,D,Baldwin Park,,,D,2016,2018,136243,0.641,,0.656,,,,,222223,105009,51049,,R,n/a,NAY
+49,Ed Chau (I),D,Monterey Park,x,,D,2016,2018,118497,0.7,,0.676,,,,,208109,88255,41869,,R,97,AYE
+50,Richard Bloom (I),D,Santa Monica,x,,D,2016,2018,212983,0.746,,0.767,,,,,332621,174914,53970,,R,82,AYE
+51,Jimmy Gomez (I),D,Echo Park,x,,D,2016,2018,127760,0.861,,0.84,,,,,223852,135940,20432,,R,93,AYE
+52,Freddie Rodriguez (I),D,Pomona,x,,D,2016,2018,109701,0.591,,0.658,,,,,188280,90556,41411,,D,79,NAY
+53,Miguel Santiago (I),D,Los Angeles,x,,D,2016,2018,87541,0.582,,0.848,,,,,181140,106010,15388,,D,94,AYE
+54,Sebastian Ridley-Thomas (I),D,Los Angeles,x,,D,2016,2018,179842,0.816,,0.851,,,,,302684,189440,27902,,R,90,NAY
+55,Phillip Chen,R,Diamond Bar,,,R,2016,2018,171431,0.577,,0.499,,,,,245721,80348,91077,,D,n/a,NAY
+56,Eduardo Garcia* (I),D,Coachella,x,x,D,2016,2018,93090,1.0,,0.642,,,,,180376,86582,45616,,R,79,AYE
+57,Ian Calderon,D,Whittier,,,D,2016,2018,148916,0.627,,0.659,,,,,239950,116303,55924,,R,97,AYE
+58,Cristina Garcia,D,Bell Gardens,,,N/A (redistricted),2016,2018,139619,0.753,,0.725,,,,,233380,124408,41311,,R,79,AYE
+59,Reggie Jones-Sawyer* (I),D,Los Angeles,x,x,D,2016,2018,77324,1.0,,0.907,,,,,193106,129048,9737,,R,100,AYE
+60,Sabrina Cervantes,D,Eastvale,,,R,2016,2018,142114,0.545,,0.525,,,,,205755,79408,72278,,R,n/a,NAY
+61,Jose Medina (I),D,Riverside,x,,N/A (redistricted),2016,2018,137587,0.659,,0.625,,,,,213988,102528,57275,,R,83,NAY
+62,Autumn Burke (I),D,Marina del Rey,x,,D,2016,2018,160285,0.772,,0.821,,,,,270490,161563,31685,,R,79,AYE
+63,Anthony Rendon (I),D,Paramount,x,,D,2016,2018,114814,0.776,,0.774,,,,,207037,117959,29520,,R,100,AYE
+64,Mike Gipson (I),D,Carson,x,,D,2016,2018,117719,0.734,,0.862,,,,,235209,150556,19916,,R,90,ABSTAIN
+65,Sharon Quirk-Silva,D,Fullerton,,,R,2016,2018,149595,0.532,,0.567,,,,,211261,85838,67340,,R,n/a,AYE
+66,Al Muratsuchi,D,Rolling Hills Estates,,,R,2016,2018,194644,0.541,,0.6,,,,,290500,118781,89075,,R,n/a,AYE
+67,Melissa Melendez (I),R,Lake Elsinore,x,,R,2016,2018,168650,0.638,,0.389,,,,,238846,69778,100934,,D,0,NAY
+68,Steven Choi,R,Irvine,,,R,2016,2018,189441,0.603,,0.494,,,,,256208,78897,101737,,D,n/a,ABSTAIN
+69,Tom Daly (I),D,Anaheim,x,,D,2016,2018,101964,0.683,,0.719,,,,,152450,80831,30193,,R,24,NAY
+70,Patrick O'Donnell (I),D,Long Beach,x,,D,2016,2018,161194,0.666,,0.681,,,,,284637,142497,56488,,R,61,ABSTAIN
+71,Randy Voepel,R,Santee,,,R,2016,2018,164233,0.658,,0.382,,,,,250163,71412,106023,,R,n/a,NAY
+72,Travis Allen (I),R,Huntington Beach,x,,R,2016,2018,169667,0.58,,0.514,,,,,240360,79500,91354,,D,0,NAY
+73,Bill Brough (I),R,Dana Point,x,,R,2016,2018,210315,0.688,,0.439,,,,,282262,76164,126643,,D,0,NAY
+74,Matthew Harper (I),R,Huntington Beach,x,,R,2016,2018,203839,0.562,,0.507,,,,,278455,85906,107730,,D,0,NAY
+75,Marie Waldron (I),R,Escondido,x,,N/A (redistricted),2016,2018,177368,0.629,,0.432,,,,,241999,68386,99731,,D,0,NAY
+76,Rocky Chávez (I),R,Oceanside,x,,R,2016,2018,160854,0.594,,0.531,,,,,248590,82239,85497,,R,0,NAY
+77,Brian Maienschein (I),R,San Diego,x,,R,2016,2018,209484,0.578,,0.552,,,,,278103,89037,94350,,D,3,NAY
+78,Todd Gloria,D,San Diego,,,D,2016,2018,210984,0.691,,0.675,,,,,281200,119014,64948,,R,n/a,AYE
+79,Shirley Weber (I),D,San Diego,x,,D,2016,2018,174907,0.652,,0.642,,,,,252561,107607,60110,,R,91,AYE
+80,Lorena Gonzalez Fletcher (I),D,San Diego,x,,D,2016,2018,139572,0.778,,0.731,,,,,209268,100825,33856,,R,100,AYE
