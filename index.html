@@ -31,13 +31,13 @@
   <button id='saveButton0sldl'>Export to PNG</button>
  </div>
 
+<!--
  <div class="map" id="sldu-map">
    <label>State Senate (upper house)</label>
    <div class="infor" id="infor-sldu"></div>
    <button id='saveButton-sldu'>Export to PNG</button>
-
-
  </div>
+-->
 
 <script src="https://cdn.rawgit.com/eligrey/canvas-toBlob.js/f1a01896135ab378aa5c0118eadd81da55e698d8/canvas-toBlob.js"></script>
 <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/e9d941381475b5df8b7d7691013401e171014e89/FileSaver.min.js"></script>
@@ -96,7 +96,7 @@ d3.json("/data/topo.json", function(error, ca) {
          d3.select("#infor-sldl").style("visibility", "hidden");
       }); 
 
-
+/*
   svgu.append("g")
       .attr("id", "sldu")
       .attr("class", "districts")
@@ -113,6 +113,8 @@ d3.json("/data/topo.json", function(error, ca) {
       .on('mouseout',function(){
          d3.select("#infor-sldu").style("visibility", "hidden");
       }); 
+
+*/
 
 });
 
