@@ -14,11 +14,15 @@
 }
 
 .aye {
-  fill: green;
+  fill: rgba(76, 175, 80, 0.5);
+  stroke: rgba(76, 175, 80, 1.0);
+  stroke-width: 1;
 }
 
 .nay {
-  fill: orange;
+  fill: rgba(255,165,0, 0.5);
+  stroke: rgba(255,165,0, 1.0);
+  stroke-width: 1;
 }
 
 
@@ -34,6 +38,7 @@
  <label> Assembly(lower house)</label>
   <div class="infor" id="infor-sldl"></div>
   <button id='saveButton-sldl'>Export to PNG</button>
+  <button id='pdfButton-sldl' onClick= "exportPDFsldl()" >Export to PDF</button>
  </div>
 
 <!--
@@ -43,7 +48,7 @@
    <button id='saveButton-sldu'>Export to PNG</button>
  </div>
 -->
-
+<script src="/bower_components/Simg/dist/simg.min.js"></script>
 <script src="https://cdn.rawgit.com/eligrey/canvas-toBlob.js/f1a01896135ab378aa5c0118eadd81da55e698d8/canvas-toBlob.js"></script>
 <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/e9d941381475b5df8b7d7691013401e171014e89/FileSaver.min.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -53,15 +58,15 @@
 
 //TODO scale  CA map
 var width = 300,
-    height = 440,
+    height = 450,
     scale = 0.5,
     translate = [ 0 , -40],
     active = d3.select(null),
     centered;
 
-var bill_name = 'AB-42';  //temp hardcode, for single bill testing
-var bill_info = 'AB-42 Bail: pretrial release.';
-var bill_file = 'votes_AB42.csv'
+var bill_name = 'AB-378';  //temp hardcode, for single bill testing
+var bill_info = 'Bail: pretrial release.';
+var bill_file = 'votes_AB378.csv'
 
 d3.select('#billName').text(bill_name);
 d3.select('#billInfo').text(bill_info);
@@ -72,8 +77,18 @@ var path = d3.geoPath()  //modified v4
 
 
 var svgl = d3.select("#sldl-map").append("svg")
+    .attr("id", 'svgl')
     .attr("width", width)
     .attr("height", height);
+
+
+function exportPDFsldl() {
+  var simg = new Simg(document.getElementById('svgl'));
+  // Replace the current SVG with an image version of it.
+  simg.replace();
+  // And trigger a download of the rendered image.
+  simg.download();
+};
 
     /*
 
@@ -113,7 +128,7 @@ d3.json("/data/topo.json", function(error, ca) {
     .enter().append("path")
       .attr("d", path)
       .attr("class", function(d){ 
-        console.log(d.properties);
+        console.log(d.properties.VOTE)
         if( d.properties.VOTE == "AYE") {
           return "aye";
         } else if (d.properties.VOTE == "NAY") {
@@ -123,18 +138,13 @@ d3.json("/data/topo.json", function(error, ca) {
       )
       .on('mouseover',function(d,i){
         d3.select(this)
-          .style('z-index', 10)
-          .style('stroke', 'black')
           .style('stroke-width', 3);
-
         d3.select("#infor-sldl")
               .style("visibility", "visible")
               .text('Assembly District ' + d.properties.NAME);
             })
       .on('mouseout',function(){
          d3.select(this)
-          .style('z-index', 1)
-          .style('stroke', 'white')
           .style('stroke-width', 1);
          d3.select("#infor-sldl").style("visibility", "hidden");
       }); 
@@ -161,6 +171,11 @@ d3.json("/data/topo.json", function(error, ca) {
   });
 
 });
+
+
+
+
+
 
 // Set-up the export buttons
 d3.select('#saveButton-sldl').on('click', function(){
